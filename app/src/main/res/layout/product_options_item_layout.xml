@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:id="@+id/rl_ProductOption"
+    >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_customize_option_name"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="8dp"
+            android:text="Options"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_toLeftOf="@+id/tv_customize_option_price"
+            android:layout_alignParentLeft="true"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Rs. 200"
+        android:textColor="#000"
+        android:id="@+id/tv_customize_option_price"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_marginRight="3dp"
+        />
+
+
+</RelativeLayout>

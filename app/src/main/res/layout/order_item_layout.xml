@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_user_name"
+            android:text="Nimra Shafiq"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:id="@+id/tv_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:text="03322721500"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/tv_delivery_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="At some place"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="4dp"
+            android:textColor="#427121"
+            android:layout_below="@id/tv_contact_number"/>
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_delivery_address"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:fontFamily="sans-serif"
+            android:text="24 hours some time"
+            android:textColor="#a40c0c"
+            android:textStyle="bold|italic"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:text="Rs: 567"
+            android:textSize="16sp"
+            android:textColor="#212020"/>
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_margin="5dp"
+            android:text="New"
+            android:textStyle="bold"
+            android:textColor="#0d4d49"
+            android:textSize="14sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="3dp"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

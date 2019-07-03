@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/popup">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="18sp"
+        android:paddingLeft="18dp"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shipment"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Category"
+                android:textSize="28sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#f9f4f4"
+                android:padding="7dp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category Name"
+            android:padding="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="#b2d9d6"/>
+
+        <EditText
+            android:id="@+id/et_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="7dp"
+            android:gravity="top|left"
+            android:background="@drawable/outline_textview"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:padding="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:textColor="#b2d9d6"/>
+
+
+        <EditText
+            android:id="@+id/et_category_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:scrollHorizontally="false"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:paddingBottom="7dp"
+            android:gravity="top|left"
+            android:background="@drawable/outline_textview"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp"
+            android:paddingTop="10dp"
+            android:translationY="1dp"
+            android:inputType="number"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_confirm_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_button_bg"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:layout_marginTop="12dp"
+            android:focusable="false"
+            android:editable="false"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+</RelativeLayout>

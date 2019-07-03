@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="300">
+
+    <EditText
+        android:id="@+id/et_option_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="150"
+        android:maxLines="5"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="7dp"
+        android:gravity="top|left"
+        android:hint="Option Name"
+        android:background="@drawable/outline_textview"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:id="@+id/et_option_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:hint="Amt"
+        android:inputType="number"
+        android:scrollHorizontally="false"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="7dp"
+        android:gravity="top|left"
+        android:background="@drawable/outline_textview"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:layout_marginBottom="4dp"/>
+    <Button
+        android:id="@+id/btn_remove_product_option"
+        android:layout_width="10dp"
+        android:layout_height="45dp"
+        android:layout_weight="50"
+        android:background="@drawable/ic_remove_circle_white_24dp"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="4dp"
+        android:padding="8dp"
+        android:focusable="false"
+        android:editable="false"
+        android:textSize="20sp"
+        />
+</LinearLayout>

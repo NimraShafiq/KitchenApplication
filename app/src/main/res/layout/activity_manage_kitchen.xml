@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageKitchenActivity"
+    android:background="@drawable/bg"
+    android:weightSum="150"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="50">
+
+        <RelativeLayout
+            android:id="@+id/rl_add_category"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout"
+            android:layout_toLeftOf="@id/rl_update_category"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="6dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/civ_1"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/add"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Category"
+                    android:layout_below="@id/civ_3"
+                    android:textColor="#0d3e5a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_update_category"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/civ_2"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/refresh"
+                    android:layout_marginLeft="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Category"
+                    android:layout_below="@id/civ_3"
+                    android:textColor="#0d3e5a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="50">
+
+        <RelativeLayout
+            android:id="@+id/rl_add_product"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout"
+            android:layout_toLeftOf="@id/rl_update_product"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="6dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/civ_3"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/add"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Product"
+                    android:layout_below="@id/civ_3"
+                    android:textColor="#0d3e5a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_update_product"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/civ_4"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/refresh"
+                    android:layout_marginLeft="10dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Product"
+                    android:layout_below="@id/civ_3"
+                    android:textColor="#0d3e5a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="50">
+
+        <RelativeLayout
+            android:id="@+id/rl_add_productoption"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout"
+            android:layout_toLeftOf="@id/rl_update_productoptions"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="6dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/civ_5"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/add"
+                    android:layout_marginLeft="15dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Product Option"
+                    android:layout_below="@id/civ_5"
+                    android:textColor="#0d3e5a"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_update_productoptions"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+                <ImageView
+                    android:id="@+id/civ_6"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/refresh"
+                    android:layout_marginLeft="22dp"
+
+                    />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Product Option"
+                    android:layout_below="@id/civ_3"
+                    android:textColor="#0d3e5a"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

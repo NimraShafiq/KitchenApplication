@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/fab_margin" >
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#92b1c0"/>
+
+            <padding android:top="4dp" />
+            <corners android:bottomLeftRadius="18dp"
+                android:topLeftRadius="18dp"
+                android:bottomRightRadius="18dp"
+                android:topRightRadius="18dp" />
+
+            <stroke android:width="2dip" android:color="#053f5c"/>
+
+        </shape>
+    </item>
+</selector>

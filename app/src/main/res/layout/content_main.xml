@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ea120320"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:id="@+id/round_korner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/outline"
+            android:padding="1dp"
+            app:corner_radius="15dp">
+
+            <ImageView
+                android:id="@+id/iv_kitchen_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/outline"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kitchen" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/outlinetext">
+
+                <TextView
+                    android:id="@+id/tv_kitchen_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="3dp"
+                    android:text="Kitchen Name"
+                    android:textColor="#e4f5f5"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/cpb_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/round_korner_layout"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1">
+
+                <com.budiyev.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/cpb_orders"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:animateProgress="true"
+                    app:backgroundStrokeColor="#7d829b"
+                    app:backgroundStrokeWidth="3dp"
+                    app:drawBackgroundStroke="true"
+                    app:foregroundStrokeCap="round"
+                    app:foregroundStrokeColor="#ee89ac"
+                    app:foregroundStrokeWidth="6dp"
+                    app:indeterminate="false"
+                    app:indeterminateMinimumAngle="45"
+                    app:indeterminateRotationAnimationDuration="1200"
+                    app:indeterminateSweepAnimationDuration="600"
+                    app:maximum="100"
+                    app:progress="0"
+                    app:progressAnimationDuration="100"
+                    app:startAngle="270" />
+
+                <TextView
+                    android:id="@+id/tv_cpb_orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1">
+
+                <com.budiyev.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/cpb_categories"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:animateProgress="true"
+                    app:backgroundStrokeColor="#7d829b"
+                    app:backgroundStrokeWidth="3dp"
+                    app:drawBackgroundStroke="true"
+                    app:foregroundStrokeCap="round"
+                    app:foregroundStrokeColor="#a5c989"
+                    app:foregroundStrokeWidth="6dp"
+                    app:indeterminate="false"
+                    app:indeterminateMinimumAngle="45"
+                    app:indeterminateRotationAnimationDuration="1200"
+                    app:indeterminateSweepAnimationDuration="600"
+                    app:maximum="100"
+                    app:progress="0"
+                    app:progressAnimationDuration="100"
+                    app:startAngle="270" />
+
+                <TextView
+                    android:id="@+id/tv_cpb_categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1">
+
+                <com.budiyev.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/cpb_product"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:animateProgress="true"
+                    app:backgroundStrokeColor="#7d829b"
+                    app:backgroundStrokeWidth="3dp"
+                    app:drawBackgroundStroke="true"
+                    app:foregroundStrokeCap="round"
+                    app:foregroundStrokeColor="#caa3fa"
+                    app:foregroundStrokeWidth="6dp"
+                    app:indeterminate="false"
+                    app:indeterminateMinimumAngle="45"
+                    app:indeterminateRotationAnimationDuration="1200"
+                    app:indeterminateSweepAnimationDuration="600"
+                    app:maximum="100"
+                    app:progress="0"
+                    app:progressAnimationDuration="100"
+                    app:startAngle="270" />
+
+                <TextView
+                    android:id="@+id/tv_cpb_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_cpb_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cpb_layout"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/outlinetext1"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Orders"
+                android:textColor="#061840"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:background="@drawable/outlinetext1"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Categories"
+                android:textColor="#061840"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/outlinetext1"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Products"
+                android:textColor="#061840"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cpb_layout"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_manage_orders"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/outlinetext2"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="22dp"
+                        android:src="@drawable/collaboration"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/civ_1"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Manage Orders"
+                        android:textColor="#051944"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_manage_kitchen"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/outlinetext2"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_2"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/food"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/civ_2"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Manage Kitchen"
+                        android:textColor="#051944"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/manage_account"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/outlinetext2"
+                android:paddingBottom="10dp"
+                android:paddingTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/chef"
+                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_width="2dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/civ_3"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Manage Account"
+                        android:textColor="#051944"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
